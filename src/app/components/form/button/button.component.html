@@ -1,0 +1,7 @@
+
+<a *ngIf="type == 'link'" class="button-container button-rounded" href="{{ href }}">
+  <span clas="button-text">{{ text }}</span>
+</a>
+
+
+<button *ngIf="type == 'button'" class="button-container" (click)="buttonOnClick()"> {{ text }} </button>
