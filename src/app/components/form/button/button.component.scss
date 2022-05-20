@@ -2,9 +2,51 @@
     width: 50vw;
     height: 8vh;
     text-align: center;
-    background-color: rgb(99, 135, 146);
     display: table-cell;
     vertical-align: middle;
     border-radius: 100vw;
-    border: 2px solid rgb(52, 58, 139);
+    text-decoration: none
+}
+
+.button-circular {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 100vw;
+    text-decoration: none
+}
+
+.button-circular-small {
+    width: 10vw;
+    height: 10vw;
+}
+
+.button-circular-medium {
+    width: 15vw;
+    height: 15vw;
+}
+
+.button-circular-large {
+    width: 20vw;
+    height: 20vw;
+}
+
+.default {
+    border: 2px solid rgb(46, 55, 141);
+    background-color: rgb(52, 115, 209);
+}
+
+.warning {
+    border: 2px solid rgb(146, 0, 0);
+    background-color: rgb(223, 85, 85);
+}
+
+.success {
+    border: 2px solid rgb(24, 146, 0);
+    background-color: rgb(90, 223, 85);
+}
+
+.info {
+    border: 2px solid rgb(146, 119, 0);
+    background-color: rgb(223, 202, 85);
 }

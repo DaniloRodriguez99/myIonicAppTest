@@ -5,5 +5,29 @@
 </ion-header>
 
 <ion-content>
-  <dr-button text="{{text}}" href="pages/signIn" type="button" (onClick)="example()"></dr-button>
+  <div class="page-container">
+    <dr-button 
+      text="{{ searchButton }}" 
+      type="button" 
+      (onClick)="getBookList()">
+    </dr-button>
+
+    <div *ngIf="isLoading" class="message-loading">
+      <p>Loading...</p>
+    </div>
+
+    <div class="list-container" *ngIf="!isLoading">
+      <div class="list-item" *ngFor="let item of list">
+        <span>{{ item.title }}</span>
+        <dr-button 
+          class="list-item-button"
+          text="+" 
+          type="button" 
+          circular="true"
+          size="small"
+          (onClick)="getBookReviewByIsbn(item)">
+        </dr-button>
+      </div>
+    </div>
+  </div>
 </ion-content>

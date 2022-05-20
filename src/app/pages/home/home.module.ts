@@ -1,13 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { FormModule } from '../../components/form/form.module'
-
 import { IonicModule } from '@ionic/angular';
+import { HomePage } from './home.page';
 
+//my imports
+import { FormModule } from '../../components/form/form.module'
+import { ListsModule } from "../../components/lists/lists.module"
 import { HomePageRoutingModule } from './home-routing.module';
 
-import { HomePage } from './home.page';
+//my services
+import { NewsService } from "../../services/news.service"
 
 @NgModule({
   imports: [
@@ -15,8 +18,10 @@ import { HomePage } from './home.page';
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    FormModule
+    FormModule,
+    ListsModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage],
+  providers: [NewsService]
 })
 export class HomePageModule {}

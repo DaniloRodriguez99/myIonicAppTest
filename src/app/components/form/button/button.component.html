@@ -1,7 +1,13 @@
 
-<a *ngIf="type == 'link'" class="button-container button-rounded" href="{{ href }}">
+<a 
+  *ngIf="type == 'link'" 
+  class="button-container {{ circular ? 'button-circular': 'button-container'}} {{styleType}}" 
+  href="{{ href }}">
   <span clas="button-text">{{ text }}</span>
 </a>
 
-
-<button *ngIf="type == 'button'" class="button-container" (click)="buttonOnClick()"> {{ text }} </button>
+<button 
+  *ngIf="type == 'button'" 
+  class="{{ circular ? 'button-circular': 'button-container' }} {{ circular ? 'button-circular-' + size: '' }} {{styleType}}" 
+  (click)="buttonOnClick()"> {{ text }} 
+</button>

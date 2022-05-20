@@ -1,0 +1,26 @@
+.list-item {
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: rgb(124, 124, 124);
+    width: 100%;
+    height: 10vh;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.list-container {
+    width: 100vw;
+}
+
+.page-container {
+    padding: 1vh;
+}
+
+.message-loading {
+    text-align: center;
+    color:rgb(153, 153, 153)
+}

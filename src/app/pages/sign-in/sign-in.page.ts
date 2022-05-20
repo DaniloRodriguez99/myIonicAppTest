@@ -11,5 +11,8 @@ export class SignInPage implements OnInit {
 
   ngOnInit() {
   }
-
+  text = "home"
+  example = () => {
+    this.text = "i am clicked"
+  }
 }
